@@ -34,6 +34,12 @@ bin/rails generate controller Articles index --skip-routes
 bin/rails generate model Article title:string body:text
 ```
 
+### Create a child model
+
+```sh
+bin/rails generate model Comment commenter:string body:text article:references
+```
+
 ### Migrate
 
 ```sh
@@ -88,13 +94,16 @@ Article.all()
 Foi introduzido o [resourceful routing](https://guides.rubyonrails.org/getting_started.html#resourceful-routing),
 agora não é mais necessário ter uma linha para cada action no `config/routes.rb`.
 
-Parei aqui: https://guides.rubyonrails.org/getting_started.html#updating-an-article
-
 ```sh
 bin/rails routes
 ```
 
 Exibe as routes existentes
+
+Repare nos campos `belongs_to` e `has_many` usados para indicar o parentesco
+entre as models article e comment.
+
+Parei aqui: https://guides.rubyonrails.org/getting_started.html#using-concerns
 
 ## Referências utilizadas
 
