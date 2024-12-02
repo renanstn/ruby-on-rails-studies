@@ -103,6 +103,14 @@ Exibe as routes existentes
 Repare nos campos `belongs_to` e `has_many` usados para indicar o parentesco
 entre as models article e comment.
 
+### Escrevendo testes com capybara
+
+- O `capybara` já vem instalado por padrão num projeto rails
+- Não mexi em NADA no `test/test_helper.rb`
+- Escrevi um teste em `test/system/root_page_test.rb`
+- Executei com `rails test:system`
+- Já funcionou!
+
 Parei aqui: https://guides.rubyonrails.org/getting_started.html#using-concerns
 
 ## Referências utilizadas
