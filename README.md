@@ -108,7 +108,12 @@ entre as models article e comment.
 - O `capybara` já vem instalado por padrão num projeto rails
 - Não mexi em NADA no `test/test_helper.rb`
 - Escrevi um teste em `test/system/root_page_test.rb`
-- Executei com `rails test:system`
+- Executei com:
+
+```sh
+rails test:system
+```
+
 - Já funcionou!
 
 Parei aqui: https://guides.rubyonrails.org/getting_started.html#using-concerns
